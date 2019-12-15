@@ -1,0 +1,23 @@
+nav.navbar {
+  background-color: white;
+  position: fixed;
+  width:100%;
+  z-index: 99;
+  .navbar-brand {
+    padding: 5px 8px;
+    border: 3px solid #fe6d00;
+    color: #fe6d00;
+  }
+  .collapse {
+    flex-direction: row-reverse;
+  }
+  ul {
+    z-index: 999;
+    li {
+      padding: 5px;
+      a.nav-link:hover{
+        color:#fe6d00 !important;
+      }
+    }
+  }
+}
