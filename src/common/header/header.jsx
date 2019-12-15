@@ -8,7 +8,7 @@ function Header() {
     if (link.hash !== "#home") {
       let block = document.querySelector(link.hash);
       let elementPosition = block.offsetTop;
-      var offsetPosition = elementPosition - 30;
+      var offsetPosition = elementPosition;
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
@@ -31,7 +31,7 @@ function Header() {
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="navbarNav"
+          data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"

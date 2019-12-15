@@ -1,6 +1,11 @@
 .endorsements {
     .endorsements-container {
       margin-top: 5%;
+      width:75%;
+      margin:auto;
+      @media (max-width:420px){
+          width:100%
+      }
       .fas {
         font-size: 15px;
         color: #fe6d00;

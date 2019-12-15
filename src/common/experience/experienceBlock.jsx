@@ -10,7 +10,7 @@ function ExperienceBlock(props) {
               <Card className={props.classes.card}>
                 <CardContent>
                   <Typography variant="h6" component="h2"></Typography>
-                  <Flip right>
+                  <Flip left>
                     <a
                       href={props.href}
                       target="_blank"

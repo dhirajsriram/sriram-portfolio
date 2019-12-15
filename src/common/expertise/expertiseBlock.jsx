@@ -5,11 +5,11 @@ import Typography from "@material-ui/core/Typography";
 import Flip from "react-reveal/Flip";
 function ExpertiseBlock(props) {
     return (
-        <div className="col-sm-3 col-12">
+        <div className="col-lg-3 col-md-6 col-12">
                 <Card className={props.classes.card}>
                   <CardContent>
                     <Typography variant="h6" component="h2"></Typography>
-                    <Flip right>
+                    <Flip left>
                       <i className={props.icon}></i>
                     </Flip>
                     <Typography

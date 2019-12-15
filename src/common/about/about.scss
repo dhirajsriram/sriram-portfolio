@@ -1,13 +1,18 @@
 .about {
-    .quote {
-      font-style: italic;
-    }
-    cite.contrast {
-      color: #fe6d00;
-    }
-    .profile-image {
-      border-radius: 200px;
-      width: 200px;
-      height: 200px;
-    }
+  width: 75%;
+  @media (max-width: 420px) {
+    width: 100%;
   }
+  margin: auto;
+  .quote {
+    font-style: italic;
+  }
+  cite.contrast {
+    color: #fe6d00;
+  }
+  .profile-image {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+  }
+}

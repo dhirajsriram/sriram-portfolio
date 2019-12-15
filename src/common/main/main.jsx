@@ -14,7 +14,7 @@ function Main() {
           <source src={require("../../assets/Black123.mp4")} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div>
+        <div className="pr-3 pl-3">
           <h1>M.S SRIRAM</h1>
           <h2 className="title">SOFT SKILLS ENABLER</h2>
           <p>Chennai | India</p>
