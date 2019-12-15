@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Flip from "react-reveal/Flip";
 function ExpertiseBlock(props) {
     return (
-        <div className="col-lg-3 col-md-6 col-12">
+        <div className="col-lg-6 col-md-6 col-12 col-xl-3">
                 <Card className={props.classes.card}>
                   <CardContent>
                     <Typography variant="h6" component="h2"></Typography>
