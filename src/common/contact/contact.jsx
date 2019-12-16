@@ -146,7 +146,7 @@ function Contact() {
                     </a>
                   </div>
                 </div>
-                {sent && <div className="get-back"><i class="fas fa-check-circle"></i>Message Sent</div>}
+                {sent && <div className="get-back"><i className="fas fa-check-circle"></i>Message Sent</div>}
               </div>
             </div>
           </form>
