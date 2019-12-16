@@ -5,6 +5,7 @@ import About from "../about/about";
 import Expertise from "../expertise/expertise";
 import Experience from "../experience/experience";
 import Endorsements from "../endorsements/endorsements";
+import Contact from "../contact/contact";
 
 function Main() {
   return (
@@ -24,6 +25,7 @@ function Main() {
       <Expertise></Expertise>
       <Experience></Experience>
       <Endorsements></Endorsements>
+      <Contact></Contact>
     </div>
   );
 }

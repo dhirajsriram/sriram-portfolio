@@ -77,6 +77,15 @@ function Header() {
                 Endorsements
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#contact"
+                onClick={e => linkClick(e)}
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
