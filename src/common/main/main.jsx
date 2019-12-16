@@ -12,9 +12,9 @@ function Main() {
 		<div className="main-content">
 			<Block>
 				<div className="name-container">
-					<video autoPlay className="w-100 backdrop" loop>
-						<source src={require('../../assets/Black123.mp4')} type="video/mp4" />
-						Your browser does not support the video tag.
+					<video autoPlay muted loop className="w-100 backdrop">
+          <source src={require('../../assets/Black123.mp4')}/>
+						Your browser does not support HTML5 video.
 					</video>
 					<div className="pr-3 pl-3 w-100">
 						<h1>M.S SRIRAM</h1>
