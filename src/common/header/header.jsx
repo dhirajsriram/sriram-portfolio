@@ -8,7 +8,8 @@ function Header() {
     if (link.hash !== "#home") {
       let block = document.querySelector(link.hash);
       let elementPosition = block.offsetTop;
-      var offsetPosition = elementPosition;
+      console.log(block.clientHeight/2 - window.innerHeight/2);
+      var offsetPosition = elementPosition - 70;
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"

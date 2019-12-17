@@ -8,6 +8,17 @@
 		left: 0;
 		z-index: -1;
 	}
+	.background-image::before{
+		content: "";
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/7/f2/abstract-background-design-yellow-squares-white-abstraktsiia.jpg");
+    background-size: cover;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+	}
 	h1 {
 		display: block;
 		font-size: 6rem;
@@ -26,7 +37,7 @@
 	}
 	.subheading {
 		letter-spacing: 3px;
-		padding-top: 20px;
+		padding-top: 50px;
 	}
 	.subheading-underline {
 		width: 10%;

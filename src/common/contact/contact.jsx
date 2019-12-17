@@ -31,7 +31,7 @@ function Contact() {
 	}
 	return (
 		<Block>
-			<div className="pt-5 contact" id="contact">
+			<div className="pt-5 contact mx-auto" id="contact">
 				<h2 className="subheading">CONTACT</h2>
 				<Fade left>
 					<hr className="subheading-underline" />

@@ -13,7 +13,7 @@ function About() {
   }, [setQuote]);
   return (
     <Block>
-      <div className="p-2 pt-5 about" id="about">
+      <div className="p-2 pt-5 about mx-auto" id="about">
         <h2 className="subheading">ABOUT</h2>
         <Fade left>
           <hr className="subheading-underline"></hr>

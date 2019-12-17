@@ -6,7 +6,7 @@ import Flip from "react-reveal/Flip";
 
 function ExperienceBlock(props) {
     return (
-        <div className="col-sm-6 col-12">
+        <div className="col-sm-6 col-12 p-3">
               <Card className={props.classes.card}>
                 <CardContent>
                   <Typography variant="h6" component="h2"></Typography>

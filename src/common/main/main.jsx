@@ -11,9 +11,9 @@ function Main() {
 	return (
 		<div className="main-content">
 			<Block>
-				<div className="name-container">
+				<div className="name-container mx-auto">
 					<video autoPlay muted loop className="w-100 backdrop">
-          <source src={require('../../assets/Black123.mp4')}/>
+						<source src={require('../../assets/Black123.mp4')} />
 						Your browser does not support HTML5 video.
 					</video>
 					<div className="pr-3 pl-3 w-100">
@@ -23,11 +23,13 @@ function Main() {
 					</div>
 				</div>
 			</Block>
-			<About />
-			<Expertise />
-			<Experience />
-			<Endorsements />
-			<Contact />
+			<div className="background-image">
+				<About />
+				<Expertise />
+				<Experience />
+				<Endorsements />
+				<Contact />
+			</div>
 		</div>
 	);
 }

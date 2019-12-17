@@ -9,8 +9,9 @@ function Expertise() {
         card: {
           minWidth: 275,
           margin: "15px 0px 15px 15px",
-          boxShadow: "none",
-          zIndex: 1
+          boxShadow: "0px 2px 1px -1px rgba(0, 0, 0, 0), 0px 1px 1px 0px rgba(0, 0, 0, 0), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);",
+          height:"100%",
+          zIndex: 1,
         },
         skills: {
           fontSize: "20px",
@@ -20,7 +21,7 @@ function Expertise() {
       const classes = useStyles();
     return (
         <Block>
-        <div className="pt-5 expertise" id="expertise">
+        <div className="pt-5 expertise mx-auto" id="expertise">
           <h2 className="subheading">EXPERTISE</h2>
           <Fade left>
             <hr className="subheading-underline"></hr>

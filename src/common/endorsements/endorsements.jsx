@@ -11,14 +11,15 @@ function Endorsements() {
     card: {
       minWidth: 275,
       margin: "15px 0px 15px 15px",
-      boxShadow: "none",
+      boxShadow: "0px 2px 1px -1px rgba(0, 0, 0, 0), 0px 1px 1px 0px rgba(0, 0, 0, 0), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);",
+      height:"100%",
       zIndex: 1
     }
   });
   const classes = useStyles();
   return (
     <Block>
-      <div className="pt-5 endorsements" id="endorsements">
+      <div className="pt-5 endorsements mx-auto" id="endorsements">
         <h2 className="subheading">ENDORSEMENTS</h2>
         <Fade left>
           <hr className="subheading-underline"></hr>
