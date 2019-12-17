@@ -6,28 +6,28 @@ import './contact.scss';
 function Contact() {
 	let myFormRef;
 	const [ sent, setSent ] = useState(false);
-  const [ sending, setSending ] = useState(false);
-  const [recaptchError,setRecaptchError] = useState(false);
+	const [ sending, setSending ] = useState(false);
+	const [ recaptchError, setRecaptchError ] = useState(false);
 	function submitInfo(e) {
-		var recaptcha = document.querySelector('#g-recaptcha-response').val();
-		if (recaptcha === '') {
-			e.preventDefault();
-      setRecaptchError(true);
-    }
-    else{
-    setRecaptchError(false);
-		setSent(false);
-		setSending(true);
 		e.preventDefault();
-		var service_id = 'default_service';
-		var template_id = 'template_FzPhxISm';
-		myFormRef.reset();
-		window.emailjs.sendForm(service_id, template_id, e.target).then(() => {
-			setSent(true);
-			setSending(false);
-		}, function(err) {
-			alert('Send email failed!\r\n Response:\n ' + JSON.stringify(err));
-		});}
+		setSending(false);
+		if (window.grecaptcha.getResponse() == '') {
+			setRecaptchError(true);
+		} else {
+			setRecaptchError(false);
+			setSent(false);
+			setSending(true);
+			var service_id = 'default_service';
+			var template_id = 'template_FzPhxISm';
+			window.emailjs.sendForm(service_id, template_id, e.target).then(() => {
+				setSent(true);
+				setSending(false);
+			}, function(err) {
+				alert('Send email failed!\r\n Response:\n ' + JSON.stringify(err));
+			});
+			myFormRef.reset();
+		}
+		window.grecaptcha.reset();
 	}
 	return (
 		<Block>
@@ -132,7 +132,10 @@ function Contact() {
 										<div className="help-block with-errors" />
 									</div>
 								</div>
-								<div className={recaptchError?"g-recaptcha error":"g-recaptcha"} data-sitekey="6Le5PsgUAAAAAIJq6CVDazF0r9MUdrM391AZjy01" />
+								<div
+									className={recaptchError ? 'g-recaptcha error' : 'g-recaptcha'}
+									data-sitekey="6Le5PsgUAAAAAIJq6CVDazF0r9MUdrM391AZjy01"
+								/>
 								<div className="col-md-12 button-block">
 									<div>
 										{!sending ? (

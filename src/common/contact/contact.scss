@@ -43,9 +43,9 @@
       }
     }
     .g-recaptcha{
-      padding:15px;
+      margin:15px;
       &.error{
-        border: 1px solid red;
+        border: 3px solid red;
       }
     }
     .button-block {
