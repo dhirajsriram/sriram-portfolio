@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './main.scss';
 import Block from '../block/block';
 import About from '../about/about';
@@ -8,6 +8,13 @@ import Endorsements from '../endorsements/endorsements';
 import Contact from '../contact/contact';
 
 function Main() {
+	const [scroll,setScroll] = useState(0);
+	useEffect(()=>{
+		window.addEventListener('scroll', handleScroll);
+	},[])
+	function handleScroll(){
+		setScroll(window.scrollY)
+	}
 	return (
 		<div className="main-content">
 			<Block>
@@ -23,7 +30,7 @@ function Main() {
 					</div>
 				</div>
 			</Block>
-			<div className="background-image">
+			<div className={(scroll > 720)?"background-image":"background-image no-background"}>
 				<About />
 				<Expertise />
 				<Experience />

@@ -11,7 +11,7 @@ function Contact() {
 	function submitInfo(e) {
 		e.preventDefault();
 		setSending(false);
-		if (window.grecaptcha.getResponse() == '') {
+		if (window.grecaptcha.getResponse() === '') {
 			setRecaptchError(true);
 		} else {
 			setRecaptchError(false);
