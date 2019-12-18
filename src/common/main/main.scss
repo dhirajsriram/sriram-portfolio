@@ -9,7 +9,8 @@
 		z-index: -1;
 	}
   .background-image::before {
-		content: "";
+	z-index: -1;
+	content: "";
     background-image: url("https://img4.goodfon.com/wallpaper/nbig/7/f2/abstract-background-design-yellow-squares-white-abstraktsiia.jpg");
     background-size: 100%;
     opacity: 0.1;
