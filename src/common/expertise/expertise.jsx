@@ -28,14 +28,14 @@ function Expertise() {
           </Fade>
           <div className="skills w-100">
             <div className="row mr-0 ml-0">
-            <ExpertiseBlock classes={classes} icon="fas fa-clock" skill={"Time Management"} description={"I can teach you techniques that would help you work smarter and not harder.So you get more done in less time."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-volume-up" skill={"Communication"} description={"I can teach you ways to convey information effecently and techniques that help you understand the information better."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-chalkboard-teacher" skill={"Leadership"} description={"I can help you be a better leader, help you inspire and motivate the people around you."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-brain" skill={"Critical Thinking"} description={"I can improve your ability to think through the problem and devise a plan of action with the best outcome."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-user-tie" skill={"Management"} description={"Being an exectutive director myself, I can teach you techniques that help you manage your business better."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-chart-line" skill={"Business Development"} description={"I will be able to help you create a long-term value for your organization from customers, markets, and relationships."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-user-tag" skill={"Sales Management"} description={"Being a person of sales, I can teach you techniques that will help you drive sales to your business."}></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-users" skill={"Team Development"} description={"I can guide you to be a better person to work with and suggest you ways to improve the overall charisma of team."}></ExpertiseBlock> 
+            <ExpertiseBlock classes={classes} icon="fas fa-volume-down" skill={"Communicational skills"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-people-carry" skill={"Team Management"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-user-tie" skill={"Body Language"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-user-check" skill={"Customer Satisfaction"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-user-times" skill={"Conflict Management"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-people-arrows" skill={"Negotiation Skills"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-graduation-cap" skill={"Leadership Skills"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-money-bill-alt" skill={"Transactional Analysis"} ></ExpertiseBlock> 
             </div>
           </div>
         </div>
