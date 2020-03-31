@@ -87,6 +87,9 @@ function Header() {
                 Contact
               </a>
             </li>
+            <li className="nav-item">
+            <img alt="ureka" width="80" src={require("../../assets/logo.png")}/>
+            </li>
           </ul>
         </div>
       </nav>

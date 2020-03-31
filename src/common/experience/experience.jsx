@@ -27,10 +27,10 @@ function Experience() {
             <hr className="subheading-underline"></hr>
           </Fade>
           <div className="row mr-0 ml-0">
-            <ExperienceBlock classes={classes} href={"http://ravelfire.com/"} src={require("../../assets/0.png")} alt={"ravel"}></ExperienceBlock>
-            <ExperienceBlock classes={classes} href={"http://www.nitinfire.com/"} src={require("../../assets/nitin.jpg")} alt={"nitin"}></ExperienceBlock>
-            <ExperienceBlock classes={classes} href={""} src={require("../../assets/saffire.jpeg")} alt={"Saffire"}></ExperienceBlock>
-            <ExperienceBlock classes={classes} href={"http://steelage.com/"} src={require("../../assets/steelage.png")} alt={"Steelage"}></ExperienceBlock>
+            <ExperienceBlock classes={classes} title="Ravel Group of Companies" href={"http://ravelfire.com/"} src={require("../../assets/0.jpeg")} alt={"ravel"}></ExperienceBlock>
+            <ExperienceBlock classes={classes} title="Nitin Fire Protection Industries Ltd" href={"http://www.nitinfire.com/"} src={require("../../assets/nitin.jpg")} alt={"nitin"}></ExperienceBlock>
+            <ExperienceBlock classes={classes} title="Saffire Devices Pvt Ltd" href={""} src={require("../../assets/saffire.jpeg")} alt={"Saffire"}></ExperienceBlock>
+            <ExperienceBlock classes={classes} title="Steelage Industries Ltd., Minimax Division" href={"http://steelage.com/"} src={require("../../assets/steelage.png")} alt={"Steelage"}></ExperienceBlock>
           </div>
         </div>
       </Block>

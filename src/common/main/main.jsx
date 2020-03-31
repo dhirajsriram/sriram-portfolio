@@ -25,8 +25,7 @@ function Main() {
           </video>
           <div className="pr-3 pl-3 w-100">
             <div className="headline">
-              <h1>M.S SRIRAM</h1>
-			  <img alt="ureka" src={require("../../assets/logo.png")}/>
+              <h1>M.S. SRIRAM</h1>
             </div>
             <h2 className="title">CERTIFIED SOFT SKILLS ENABLER</h2>
             <p>Chennai | India</p>

@@ -31,7 +31,7 @@ function Expertise() {
             <ExpertiseBlock classes={classes} icon="fas fa-volume-down" skill={"Communicational skills"} ></ExpertiseBlock>
             <ExpertiseBlock classes={classes} icon="fas fa-people-carry" skill={"Team Management"} ></ExpertiseBlock>
             <ExpertiseBlock classes={classes} icon="fas fa-user-tie" skill={"Body Language"} ></ExpertiseBlock>
-            <ExpertiseBlock classes={classes} icon="fas fa-user-check" skill={"Customer Satisfaction"} ></ExpertiseBlock>
+            <ExpertiseBlock classes={classes} icon="fas fa-user-check" skill={"Sales and Customer Satisfaction"} ></ExpertiseBlock>
             <ExpertiseBlock classes={classes} icon="fas fa-user-times" skill={"Conflict Management"} ></ExpertiseBlock>
             <ExpertiseBlock classes={classes} icon="fas fa-people-arrows" skill={"Negotiation Skills"} ></ExpertiseBlock>
             <ExpertiseBlock classes={classes} icon="fas fa-graduation-cap" skill={"Leadership Skills"} ></ExpertiseBlock>
