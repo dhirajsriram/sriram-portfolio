@@ -1,23 +1,36 @@
-import React from "react";
-import Block from "../block/block";
-import Fade from "react-reveal/Fade";
-import Carousel from "react-material-ui-carousel";
-import "./endorsements.scss";
-
-function Slideshow(props) {
-  return (
-    <Block>
-      <div className="pt-5 endorsements mx-auto" id="endorsements">
-        <div className="endorsements-container">
-          <Fade>
-            <Carousel>
-              {props.children}
-            </Carousel>
-          </Fade>
-        </div>
-      </div>
-    </Block>
-  );
+import * as React from 'react';
+import Masonry from 'react-masonry-component';
+import "./endorsements.scss"
+ 
+const masonryOptions = {
+    transitionDuration: 0
+};
+ 
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
+ 
+class Endorsements extends React.Component {
+    render() {
+        const childElements = this.props.elements.map(function(element){
+           return (
+                <li className="image-element-class">
+                    <img src={element.src} alt="carousel-element"/>
+                </li>
+            );
+        });
+    
+        return (
+            <Masonry
+                className={'my-gallery-class'} // default ''
+                elementType={'ul'} // default 'div'
+                options={masonryOptions} // default {}
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                imagesLoadedOptions={imagesLoadedOptions} // default {}
+            >
+                {childElements}
+            </Masonry>
+        );
+    }
 }
-
-export default Slideshow;
+ 
+export default Endorsements;

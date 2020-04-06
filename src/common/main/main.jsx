@@ -5,7 +5,7 @@ import About from "../about/about";
 import Expertise from "../expertise/expertise";
 import Experience from "../experience/experience";
 import Contact from "../contact/contact";
-import Slideshow from "../endorsements/endorsements";
+import Endorsements from "../endorsements/endorsements";
 
 function Main() {
   const [scroll, setScroll] = useState(0);
@@ -40,13 +40,31 @@ function Main() {
         <About />
         <Expertise />
         <Experience />
-        <Slideshow>
-			<img src={require("../../assets/BSA_2816.JPG")} className="carousel-image" alt="slide-1"/>
-			<img src={require("../../assets/BSA_2810.JPG")} className="carousel-image" alt="slide-1"/>
-			<img src={require("../../assets/DSC_0631.JPG")} className="carousel-image" alt="slide-1"/>
-			<img src={require("../../assets/DSC_0634.JPG")} className="carousel-image" alt="slide-1"/>
-			<img src={require("../../assets/DSC00734.JPG")} className="carousel-image" alt="slide-1"/>
-		</Slideshow>
+        <Endorsements
+        elements={[{
+          "src":require("../../assets/BSA_2816.JPG")
+        },
+        {
+          "src":require("../../assets/BSA_2810.JPG")
+        },
+        {
+          "src":require("../../assets/DSC_0631.JPG")
+        },
+        {
+          "src":require("../../assets/DSC_0634.JPG")
+        },
+        {
+          "src":require("../../assets/DSC00734.JPG")
+        },
+        {
+          "src":require("../../assets/BSA_2816.JPG")
+        },
+      // {
+      //   "src": require("../../assets/BSA_2847.JPG ")
+      // }
+      ]}
+        >
+		</Endorsements>
         <Contact />
       </div>
     </div>

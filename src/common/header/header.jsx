@@ -72,15 +72,6 @@ function Header() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#endorsements"
-                onClick={e => linkClick(e)}
-              >
-                Endorsements
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
                 href="#contact"
                 onClick={e => linkClick(e)}
               >
