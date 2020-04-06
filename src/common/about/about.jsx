@@ -25,11 +25,15 @@ function About() {
               My entire career has been dedicated to the <span className="contrast">fire protection </span>
               industry. I am extremely passionate about this subject and remain
               up to date with the knowledge of all latest detection and suppression
-              systems available globally. I am also well known for the deep
+              systems available globally. </p>
+              <p>
+              I am also well known for the deep
               understanding of advanced techniques in firefighting like water
               mist systems and aerosol quenching systems for which I
-              represented some of the leading International brands in India. I
-              have served companies like Gunnebo, FirePro, and Nitin fire where
+              represented some of the leading International brands in India.
+              </p>
+              <p>
+              I have served companies like Gunnebo, FirePro, and Nitin fire where
               I handled specialized products like AFT water mist systems from
               Germany and FirePro Aerosol systems from Cyprus. 
               </p>
@@ -63,6 +67,10 @@ function About() {
             </cite>
           </div>
         </blockquote>
+        <div>
+          <img src={require("../../assets/nabet.jpg")} alt="nabet" width="150"/>
+          <img src={require("../../assets/sqa.png")} alt="sqa" width="150"/>
+        </div>
       </div>
     </Block>
   );

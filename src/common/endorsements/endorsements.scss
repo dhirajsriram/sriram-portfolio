@@ -3,7 +3,13 @@
   padding: 10px;
   img{
     width:500px;
+    height:333px;
     border-radius: 5px;
+    object-fit:cover;
     box-shadow: 0 4px 2px -2px #ececec;
   }
+}
+
+.my-gallery-class{
+  margin: 20px;
 }

@@ -41,30 +41,36 @@ function Main() {
         <Expertise />
         <Experience />
         <Endorsements
-        elements={[{
-          "src":require("../../assets/BSA_2816.JPG")
-        },
-        {
-          "src":require("../../assets/BSA_2810.JPG")
-        },
-        {
-          "src":require("../../assets/DSC_0631.JPG")
-        },
-        {
-          "src":require("../../assets/DSC_0634.JPG")
-        },
-        {
-          "src":require("../../assets/DSC00734.JPG")
-        },
-        {
-          "src":require("../../assets/BSA_2816.JPG")
-        },
-      // {
-      //   "src": require("../../assets/BSA_2847.JPG ")
-      // }
-      ]}
-        >
-		</Endorsements>
+          elements={[
+            {
+              src: require("../../assets/BSA_2816.JPG"),
+            },
+            {
+              src: require("../../assets/BSA_2810.JPG"),
+            },
+            {
+              src: require("../../assets/DSC_0631.JPG"),
+            },
+            {
+              src: require("../../assets/DSC_0634.JPG"),
+            },
+            {
+              src: require("../../assets/DSC00734.JPG"),
+            },
+            {
+              src: require("../../assets/BSA_2816.JPG"),
+            },
+            {
+              src: require("../../assets/DSC_9735.jpg"),
+            },
+            {
+              src: require("../../assets/Ravel1.jpg"),
+            },
+            {
+              src: require("../../assets/Ravel2.jpg"),
+            },
+          ]}
+        ></Endorsements>
         <Contact />
       </div>
     </div>
